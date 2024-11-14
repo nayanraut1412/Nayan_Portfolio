@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Moon from "../assets/moon.webp"; // Replace with your actual path
-import UserImage from "../assets/sahil_Profile_photo.jpeg"; // Replace with the actual path to your image
+import UserImage from "../assets/nayan_photo-1.png"; // Replace with the actual path to your image
 
 const Navbar = ({ switchTheme = () => {}, theme }) => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -15,16 +15,16 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between bg-[#e9eef5] text-[#9c27b0] h-28 sticky top-0 z-50 font-bold tracking-wide uppercase border-b-2 border-gray-300 shadow-lg px-16">
+      <nav className="flex items-center justify-between bg-[#e9eef5] text-[#5c9ce6] h-20 sticky top-0 z-50 font-bold tracking-wide uppercase border-b-2 border-gray-300 shadow-lg px-16">
         {/* Mobile Menu Icon */}
         <div className="block lg:hidden flex items-center px-8">
           <button
             className="flex flex-col justify-between h-7 w-12 focus:outline-none"
             onClick={() => setShowSidebar(!showSidebar)}
           >
-            <span className={`block h-1 w-full bg-[#9c27b0] transition-transform duration-300 ${showSidebar ? "transform rotate-45 translate-y-2" : ""}`}></span>
-            <span className={`block h-1 w-full bg-[#9c27b0] transition-opacity duration-300 ${showSidebar ? "opacity-0" : ""}`}></span>
-            <span className={`block h-1 w-full bg-[#9c27b0] transition-transform duration-300 ${showSidebar ? "transform -rotate-45 -translate-y-2" : ""}`}></span>
+            <span className={`block h-1 w-full bg-[#5c9ce6] transition-transform duration-300 ${showSidebar ? "transform rotate-45 translate-y-2" : ""}`}></span>
+            <span className={`block h-1 w-full bg-[#5c9ce6] transition-opacity duration-300 ${showSidebar ? "opacity-0" : ""}`}></span>
+            <span className={`block h-1 w-full bg-[#5c9ce6] transition-transform duration-300 ${showSidebar ? "transform -rotate-45 -translate-y-2" : ""}`}></span>
           </button>
         </div>
 
@@ -35,12 +35,12 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
             alt="User Logo"
             className="w-10 h-10 rounded-full border-1"
           />
-          <span className="text-3xl md:text-4xl text-[#9c27b0]">Sahil</span>
+          <span className="text-3xl md:text-4xl text-[#5c9ce6]">Nayan</span>
           {theme === "Dark" && (
             <img
               src={Moon}
               alt="Theme icon"
-              className="w-12 h-12 rounded-full p-1 cursor-pointer border-2 border-[#9c27b0]"
+              className="w-12 h-12 rounded-full p-1 cursor-pointer border-2 border-[#5c9ce6]"
               onClick={switchTheme}
             />
           )}
@@ -51,7 +51,7 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
           {["About", "Work", "Projects", "Skills", "Contact"].map((item) => (
             <p
               key={item}
-              className="text-xl px-4 py-2 rounded-full cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#ffffff] hover:text-[#9c27b0] hover:shadow-lg"
+              className="text-xl px-4 py-2 rounded-full cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#ffffff] hover:text-[#5c9ce6] hover:shadow-lg"
               onClick={() => handleNavItemClick(item.toLowerCase())}
             >
               {item}
@@ -61,12 +61,12 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
       </nav>
 
       {/* Sidebar for Mobile View */}
-      <div className={`fixed top-28 left-0 h-[calc(100vh-80px)] w-64 bg-[#e9eef5] border-r-2 border-[#9c27b0] transition-transform duration-700 ${showSidebar ? "transform translate-x-0" : "transform -translate-x-full"}`}>
+      <div className={`fixed top-28 left-0 h-[calc(100vh-80px)] w-64 bg-[#e9eef5] border-r-2 border-[#5c9ce6] transition-transform duration-700 ${showSidebar ? "transform translate-x-0" : "transform -translate-x-full"}`}>
         <div className="flex flex-col items-center p-5 space-y-6">
-          {["About", "Work", "Projects", "Skills", "Contact"].map((item) => (
+          {["About", "Work", "Projects", "Skills"].map((item) => (
             <p
               key={item}
-              className="text-2xl text-[#9c27b0] font-bold px-4 py-2 rounded-full cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#9c27b0] hover:text-[#ffffff] hover:shadow-lg"
+              className="text-2xl text-[#5c9ce6] font-bold px-4 py-2 rounded-full cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#5c9ce6] hover:text-[#ffffff] hover:shadow-lg"
               onClick={() => handleNavItemClick(item.toLowerCase())}
             >
               {item}

@@ -22,7 +22,7 @@
     background-color: #ffffff; /* Default button background color */
     font-weight: bold;
     padding: 10px 20px;
-    border: 1px solid #9c27b0; /* Border color */
+    border: 1px solid #5c9ce6; /* Border color */
     border-radius: 10px; /* Rounded full button */
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -30,7 +30,7 @@
   
   .project_button.active,
   .project_button:hover {
-    background-color: #9c27b0; /* Hover background color */
+    background-color: #5c9ce6; /* Hover background color */
     color: #ffffff; /* Hover text color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
   }
@@ -79,14 +79,14 @@
     background-color: #e9eef5; /* Default button background color */
     font-weight: bold;
     padding: 5px 10px;
-    border: 1px solid #9c27b0; /* Border color */
+    border: 1px solid #5c9ce6; /* Border color */
     border-radius: 5px; /* Rounded button */
     cursor: pointer;
     transition: all 0.4s ease-in-out;
   }
   
   .tech_button:hover {
-    background-color: #9c27b0; /* Hover background color */
+    background-color: #5c9ce6; /* Hover background color */
     color: #ffffff; /* Hover text color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
   }

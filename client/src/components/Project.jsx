@@ -18,41 +18,41 @@ const projects = [
     github: 'https://github.com/yourusername/projectone',
   },
   
-  {
-    id: 2,
-    title: 'Automatic Timetable Generator',
-    tech: ['react', 'express', 'node.js', 'mongodb', 'dsa(scheduling algorithm)'],
-    description: 'The Automatic Timetable Generator is a MERN stack project designed to automate academic scheduling, reducing manual effort and streamlining the process. It allows easy addition and management of teachers and subjects, assigning subjects to specific teachers, and generating conflict-free schedules. With an intuitive dashboard, it enables visualization and adjustments, making timetable management efficient and user-friendly.',
-    image: Automatic,
-    github: 'https://github.com/sahil13082003/Automatic-Timetable-Generator',
-    live: 'https://automatic-timetable-generator.vercel.app/'
-  },
-  {
-    id: 3,
-    title: 'Aasan Delivery AI-Based Customized Time-Slot Delivery',
-    tech: ['react', 'express', 'node.js', 'mongodb', 'machine learning'],
-    description: 'Developed a centralized web application to streamline parcel delivery for post offices. Key features include OTP-based authentication, QR code generation for consignments, real-time address updates, and delivery slot prediction. Integrated consignment tracking for postmen and automated notifications, enhancing delivery efficiency and customer satisfaction.',
-    image: Automatic,
-    github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
-  },
-  {
-    id: 4,
-    title: 'Inshort Clone',
-    tech: ['react', 'node.js', 'express', 'mongodb'],
-    description: 'Created a responsive news platform inspired by Inshorts, allowing users to access concise news updates across various categories. This web application is built using React for a seamless user interface, Node.js and Express for backend data processing, and MongoDB for efficient data storage. Key features include real-time news aggregation, a user-friendly UI for easy browsing on both mobile and desktop, and scalable data handling to support a growing volume of news content. The project is live on Vercel, ensuring fast and accessible news delivery.',
-    image: inshort_clone,
-    github: 'https://github.com/sahil13082003/Inshort_Clone_main',
-    live: 'https://inshort-clone-main.vercel.app/'
-  },
-  {
-    id: 5,
-    title: 'MERN CRUD Operation',
-    tech: ['react', 'node.js', 'express.js', 'mongodb', 'rest-api'],
-    description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
-    image: crud,
-    github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
-    live: 'https://mern-crud-operations-iota.vercel.app/'
-  },
+  // {
+  //   id: 2,
+  //   title: 'Automatic Timetable Generator',
+  //   tech: ['react', 'express', 'node.js', 'mongodb', 'dsa(scheduling algorithm)'],
+  //   description: 'The Automatic Timetable Generator is a MERN stack project designed to automate academic scheduling, reducing manual effort and streamlining the process. It allows easy addition and management of teachers and subjects, assigning subjects to specific teachers, and generating conflict-free schedules. With an intuitive dashboard, it enables visualization and adjustments, making timetable management efficient and user-friendly.',
+  //   image: Automatic,
+  //   github: 'https://github.com/sahil13082003/Automatic-Timetable-Generator',
+  //   live: 'https://automatic-timetable-generator.vercel.app/'
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Aasan Delivery AI-Based Customized Time-Slot Delivery',
+  //   tech: ['react', 'express', 'node.js', 'mongodb', 'machine learning'],
+  //   description: 'Developed a centralized web application to streamline parcel delivery for post offices. Key features include OTP-based authentication, QR code generation for consignments, real-time address updates, and delivery slot prediction. Integrated consignment tracking for postmen and automated notifications, enhancing delivery efficiency and customer satisfaction.',
+  //   image: Automatic,
+  //   github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Inshort Clone',
+  //   tech: ['react', 'node.js', 'express', 'mongodb'],
+  //   description: 'Created a responsive news platform inspired by Inshorts, allowing users to access concise news updates across various categories. This web application is built using React for a seamless user interface, Node.js and Express for backend data processing, and MongoDB for efficient data storage. Key features include real-time news aggregation, a user-friendly UI for easy browsing on both mobile and desktop, and scalable data handling to support a growing volume of news content. The project is live on Vercel, ensuring fast and accessible news delivery.',
+  //   image: inshort_clone,
+  //   github: 'https://github.com/sahil13082003/Inshort_Clone_main',
+  //   live: 'https://inshort-clone-main.vercel.app/'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'MERN CRUD Operation',
+  //   tech: ['react', 'node.js', 'express.js', 'mongodb', 'rest-api'],
+  //   description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
+  //   image: crud,
+  //   github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
+  //   live: 'https://mern-crud-operations-iota.vercel.app/'
+  // },
   
 ];
 

@@ -23,7 +23,7 @@
   
   .spinner {
     border: 6px solid #f3f3f3; /* Light gray */
-    border-top: 6px solid #9c27b0; /* Purple color */
+    border-top: 6px solid #5c9ce6; /* Purple color */
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -33,7 +33,7 @@
   .loadingText {
     margin-top: 15px;
     font-size: 18px;
-    color: #9c27b0; /* Text color */
+    color: #5c9ce6; /* Text color */
   }
   
   @keyframes spin {

@@ -24,7 +24,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px; /* Corrected margin */
-  color: #9c27b0;
+  color: #5c9ce6;
 }
 
 .about_left_subhead {
@@ -67,14 +67,14 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #9c27b0;
+  background-color: #5c9ce6;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
 }
 
 .download_resume:hover {
   background-color: #e9eef5; /* Background color on hover */
-  color: #9c27b0; /* Font color on hover */
+  color: #5c9ce6; /* Font color on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -90,7 +90,7 @@ body {
   width: 380px; /* Increased size */
   background-clip: content-box, border-box;
   background-size: cover;
-  background-image: url('../assets/sahil_Profile_photo.jpeg'), linear-gradient(to bottom left, #eee7e7, #fbf3f3);
+  background-image: url('../assets/nayan_photo-1.png'), linear-gradient(to bottom left, #eee7e7, #fbf3f3);
   background-repeat: no-repeat;
   padding: 12px;
 }
