@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul>
-              {["About", "Work", "Projects", "Skills"].map((item) => (
+              {["About", "Projects", "Skills"].map((item) => (
                 <li key={item} className="my-1">
                   <a href={`#${item.toLowerCase()}`} className="text-lg hover:underline">
                     {item}
