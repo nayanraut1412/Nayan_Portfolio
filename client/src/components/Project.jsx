@@ -4,56 +4,49 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Agrirenthub from '../assets/agrirenthub.png';
-import crud from '../assets/php_crud.png';
-import inshort_clone from '../assets/inshort_clone.png';
-import Automatic from '../assets/automatic.png';
+import Bandobast from '../assets/image.png';
+import SustainX from '../assets/sustainx.png';
+import margdarshak from '../assets/margdarshak.png';
 
 const projects = [
+
   {
     id: 1,
+    title: 'Margdarshak',
+    tech: ['react', 'node.js', 'express', 'mongodb', 'Tailwind CSS', 'Google Meet API', 'Google Meet API'],
+    description: ' Developing Margdarshak, a mentorship platform, enabling efficient slot-based scheduling and coordination between over 50+ mentors and mentees. Implemented mentor availability and booking features with real-time slot management; mentors can review and accept requests based on availability. Deployed the project on Vercel, optimizing response times by 30%. Technologies used: React.js, Node.js, Express.js, MongoDB Atlas, and Tailwind CSS.',
+    image: margdarshak,
+    github: 'https://github.com/nayanraut1412/Margdarshak-Find_The_Right_Mentor',
+    live: 'https://margdarshak-find-the-right-mentor.vercel.app/home'
+  },
+  {
+    id: 2,
+    title: 'SustainX',
+    tech: ['Flutter', 'Firebase', 'Razorpay Pay API ', 'react', 'Google Maps API', 'Python'],
+    description: 'Developed SustainX an app-based platform that optimizes trash collection process for both customers and collectors. Made use of ML algorithm- ResNet 152 to train model for trash segregation and classification further increasing accuracy by 92% and Project selected for Google Solution Challenge’s Regional Bootcamp. Technologies used: Flutter, React, Firebase, Cloud Firestore, Google Maps API, Python, ResNet-152 and Razorpay Pay API and Utilized Figma to craft an aesthetically pleasing user interface for the application.',
+    image: SustainX,
+    github: 'https://github.com/nayanraut1412/SustainX',
+  },
+ 
+  {
+    id: 3,
+    title: 'Band-O-bast',
+    tech: ['html', 'css', 'javascript', 'firebase', 'arduino IDE'],
+    description: 'Built an IoT-based solution for the Grand Finale of the Smart India Hackathon 2023. Created a wearable device using ESP8266, MAX30100 Pulse Oximeter, LoRa SX1278, and GPS Neo6M to monitor and track over 100 deployed police personnel during Bandobast events. Programmed hardware with Arduino IDE for real - time geo - location updates every 5 seconds to Firebase, ensuring precise tracking.',
+    image: Bandobast,
+     github: 'https://github.com/nayanraut1412/band-o-bast'
+    
+  },
+  {
+    id: 4,
     title: 'Agricultural Equipment Rental System',
     tech: ['php', 'html', 'css', 'razorpay', 'smtp-mailer', 'mysql'],
     description: 'AgriRentHub is a user-friendly online platform designed to empower farmers. This platform facilitates farmers in renting their equipment to fellow farmers at cost-effective rates, creating an opportunity to generate extra income. A smart and efficient solution for optimizing resources in agriculture.',
     image: Agrirenthub,
-    github: 'https://github.com/yourusername/projectone',
+    github: 'https://github.com/nayanraut1412/AgriRentHub',
   },
   
-  // {
-  //   id: 2,
-  //   title: 'Automatic Timetable Generator',
-  //   tech: ['react', 'express', 'node.js', 'mongodb', 'dsa(scheduling algorithm)'],
-  //   description: 'The Automatic Timetable Generator is a MERN stack project designed to automate academic scheduling, reducing manual effort and streamlining the process. It allows easy addition and management of teachers and subjects, assigning subjects to specific teachers, and generating conflict-free schedules. With an intuitive dashboard, it enables visualization and adjustments, making timetable management efficient and user-friendly.',
-  //   image: Automatic,
-  //   github: 'https://github.com/sahil13082003/Automatic-Timetable-Generator',
-  //   live: 'https://automatic-timetable-generator.vercel.app/'
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Aasan Delivery AI-Based Customized Time-Slot Delivery',
-  //   tech: ['react', 'express', 'node.js', 'mongodb', 'machine learning'],
-  //   description: 'Developed a centralized web application to streamline parcel delivery for post offices. Key features include OTP-based authentication, QR code generation for consignments, real-time address updates, and delivery slot prediction. Integrated consignment tracking for postmen and automated notifications, enhancing delivery efficiency and customer satisfaction.',
-  //   image: Automatic,
-  //   github: 'https://github.com/sahil13082003/Aasan-Delivery-AI-Based-Customized-Time-Slot-Delivery',
-  // },
-  // {
-  //   id: 4,
-  //   title: 'Inshort Clone',
-  //   tech: ['react', 'node.js', 'express', 'mongodb'],
-  //   description: 'Created a responsive news platform inspired by Inshorts, allowing users to access concise news updates across various categories. This web application is built using React for a seamless user interface, Node.js and Express for backend data processing, and MongoDB for efficient data storage. Key features include real-time news aggregation, a user-friendly UI for easy browsing on both mobile and desktop, and scalable data handling to support a growing volume of news content. The project is live on Vercel, ensuring fast and accessible news delivery.',
-  //   image: inshort_clone,
-  //   github: 'https://github.com/sahil13082003/Inshort_Clone_main',
-  //   live: 'https://inshort-clone-main.vercel.app/'
-  // },
-  // {
-  //   id: 5,
-  //   title: 'MERN CRUD Operation',
-  //   tech: ['react', 'node.js', 'express.js', 'mongodb', 'rest-api'],
-  //   description: 'This project demonstrates a basic MERN CRUD (Create, Read, Update, Delete) application. It allows users to perform essential database operations on a simple web interface. The application includes features like adding new records, displaying existing records, updating records, and deleting records from a MongoDB database.',
-  //   image: crud,
-  //   github: 'https://github.com/sahil13082003/MERN-CRUD-Operations-',
-  //   live: 'https://mern-crud-operations-iota.vercel.app/'
-  // },
-  
+
 ];
 
 const Project = () => {
@@ -62,8 +55,8 @@ const Project = () => {
   const filteredProjects = filter === 'all'
     ? projects
     : projects.filter(project =>
-        project.tech.map(t => t.toLowerCase()).includes(filter)
-      );
+      project.tech.map(t => t.toLowerCase()).includes(filter)
+    );
 
   return (
     <div id="projects" className="project">

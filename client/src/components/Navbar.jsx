@@ -17,7 +17,7 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
     <>
       <nav className="flex items-center justify-between bg-[#e9eef5] text-[#5c9ce6] h-20 sticky top-0 z-50 font-bold tracking-wide uppercase border-b-2 border-gray-300 shadow-lg px-16">
         {/* Mobile Menu Icon */}
-        <div className="block lg:hidden flex items-center px-8">
+        <div className="lg:hidden flex items-center px-8">
           <button
             className="flex flex-col justify-between h-7 w-12 focus:outline-none"
             onClick={() => setShowSidebar(!showSidebar)}
@@ -48,7 +48,7 @@ const Navbar = ({ switchTheme = () => {}, theme }) => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center space-x-6 ml-auto">
-          {["About", "Work", "Projects", "Skills", "Contact"].map((item) => (
+          {["About", "Projects", "Skills", "Contact"].map((item) => (
             <p
               key={item}
               className="text-xl px-4 py-2 rounded-full cursor-pointer transition-all duration-700 ease-in-out hover:bg-[#ffffff] hover:text-[#5c9ce6] hover:shadow-lg"
