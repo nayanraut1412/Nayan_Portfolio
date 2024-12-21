@@ -3,7 +3,7 @@ import github from '../assets/github.webp';
 import linkedin from '../assets/linkedin.webp';
 // import leetcode from '../assets/leetcode.png';
 import gmail from '../assets/gmail.webp';
-import resumePDF from '../assets/nayan_resume_Internship.pdf';
+import resumePDF from '../assets/nayan_resume.pdf';
 
 import '../style/About.css';
 
